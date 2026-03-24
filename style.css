@@ -1,0 +1,18 @@
+/* Reset */ *{ margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif; } 
+/* Page Background */ body{ height:100vh; display:flex; justify-content:center; align-items:center; background: linear-gradient( 135deg, #00bcd4, #00acc1, #0097a7 );
+     margin: 0; padding: 0; font-family: Arial, sans-serif;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/024/074/491/large_2x/notebook-computer-or-laptop-on-dirty-desk-full-of-books-stacked-in-library-or-study-room-generative-ai-technology-photo.jpg');
+       background-size: cover; background-position: center; background-repeat: no-repeat; } 
+       /* Main Container (Glass Effect) */ .container{ width:700px; text-align:center; padding:50px; border-radius:20px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); box-shadow:0 8px 25px rgba(0,0,0,0.2); }
+        /* Heading */ h1{ color:white; font-size:40px; margin-bottom:10px; }
+         /* Tagline */ .tagline{ color:white; font-size:16px; margin-bottom:30px; opacity:0.9; }
+          /* Buttons Area */ .buttons{ display:flex; justify-content:center; gap:20px; }
+           /* Buttons Common Style */ button{ border:none; padding:12px 30px; font-size:16px; border-radius:8px; cursor:pointer; transition:0.3s; }
+            /* Login Button */ .login{ background:#f4b400; color:black; }
+             .login:hover{ background:#e0a800; transform:scale(1.05); }
+              /* Signup Button */ .signup{ background:#4caf50; color:white; }
+               .signup:hover{ background:#3d9c40; transform:scale(1.05); }
+                /* Login / Signup Card */ .form-card{ width:320px; padding:30px; border-radius:15px; background: rgba(0,0,0,0.2); backdrop-filter: blur(8px); box-shadow:0 8px 20px rgba(0,0,0,0.25); text-align:center; }
+                 /* Inputs */ input{ width:100%; padding:10px; margin:10px 0; border:none; border-radius:5px; }
+                  /* Submit Button */ .submit-btn{ margin-top:10px; background:white; padding:10px; border-radius:6px; cursor:pointer; }
+                   .submit-btn:hover{ background:#eaeaea; }

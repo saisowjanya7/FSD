@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<style>
+
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://static.vecteezy.com/system/resources/previews/024/074/491/large_2x/notebook-computer-or-laptop-on-dirty-desk-full-of-books-stacked-in-library-or-study-room-generative-ai-technology-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark overlay */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Glass Box */
+.login-box {
+    width: 400px;
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+/* Heading */
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+
+    border: none;
+    border-radius: 8px;
+}
+
+/* Button */
+.login-box button {
+    width: 60%;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Login</h2>
+
+<form method="POST" action="{{ url_for('login') }}">
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<br>
+
+<p style="color:white;">Don't have an account?</p>
+
+<a href="{{ url_for('signup') }}">
+<button>Sign Up</button>
+</a>
+
+</div>
+
+</body>
+</html>

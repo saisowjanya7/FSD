@@ -1,0 +1,75 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://static.vecteezy.com/system/resources/previews/024/074/491/large_2x/notebook-computer-or-laptop-on-dirty-desk-full-of-books-stacked-in-library-or-study-room-generative-ai-technology-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+}
+/* Navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+background: rgba(0, 0, 0, 0.2);
+color:white;
+}
+
+/* Container */
+.container{
+padding:30px;
+}
+
+/* Grid */
+.grid{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
+}
+
+/* Cards */
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+margin-top:20px;
+}
+
+/* Inputs */
+input, select{
+padding:10px;
+margin:5px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* Button */
+button{
+padding:10px 15px;
+background:green;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Lists */
+ul{
+margin-top:10px;
+}
+
+li{
+padding:5px;
+border-bottom:1px solid #eee;
+}

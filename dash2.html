@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FKRS Dashboard</title>
+<link rel="stylesheet" href="style6.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>FKRS Dashboard</h2>
+    <button class="logout">Logout</button>
+</div>
+
+<div class="container">
+
+    <h1>Welcome, Student 👋</h1>
+
+    <!-- Knowledge Registration -->
+    <div class="card">
+        <h3>📘 Register New Knowledge</h3>
+
+        <input type="text" id="subject" placeholder="Subject (OS, DBMS)">
+        <input type="text" id="topic" placeholder="Topic Name">
+
+        <label>Confidence (1-5):</label>
+        <select id="confidence">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <button onclick="addTopic()">Save Topic</button>
+    </div>
+
+    <!-- Knowledge Health -->
+    <div class="grid">
+
+        <div class="card">
+            <h3>✅ Retained</h3>
+            <ul id="retainedList"></ul>
+        </div>
+
+        <div class="card">
+            <h3>⚠️ Fading</h3>
+            <ul id="fadingList"></ul>
+        </div>
+
+        <div class="card">
+            <h3>❌ Forgotten</h3>
+            <ul id="forgottenList"></ul>
+        </div>
+
+    </div>
+
+    <!-- Recall Check -->
+    <div class="card">
+        <h3>🧠 Recall Check</h3>
+        <p id="recallQuestion">Click below to test memory</p>
+        <button onclick="startRecall()">Start Recall</button>
+    </div>
+
+    <!-- Recovery Suggestions -->
+    <div class="card">
+        <h3>💡 Recovery Suggestions</h3>
+        <ul id="recoveryList"></ul>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
